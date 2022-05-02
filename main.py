@@ -26,7 +26,7 @@ msg = 'To:' + TO + '\n' + 'From: ' + FROM + '\n' + f"Subject:{SUBJECT}" + '\n'
 TEXT = msg + f"Hurry up!\n The price decreases. Now is {vacuum_price}!"
 
 # Procedure about sending.
-if vacuum_price < 100:
+if vacuum_price < 200:
     server = smtplib.SMTP(SERVER, 587)
     server.ehlo()
     server.starttls()
