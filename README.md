@@ -1,5 +1,6 @@
 # Amazon_Price_Tracker
-<img width="1189" alt="Screenshot 2022-05-02 at 6 04 06 PM" src="https://user-images.githubusercontent.com/64299794/166257410-05dedba9-2baa-44ff-9e0c-f6ed1aace8fb.png">
+<img width="622" alt="Screenshot 2022-05-02 at 6 04 06 PM" src="https://user-images.githubusercontent.com/64299794/166257877-24c3e743-7952-4c6f-8451-30eba54fb416.png">
+
 The email which informs us about the product's price.
 
 ## Scripting & Automation Deliverables
