@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-# import lxml
 import smtplib
 
 # Features about Authorization.
@@ -19,17 +18,13 @@ response = requests.get("https://www.amazon.com/ILIFE-Pro-ElectroWall-Self-Charg
                         headers=headers)
 
 html_amazonpage = response.text
-
-# print(html_amazonpage)
-
 soup = BeautifulSoup(html_amazonpage, "lxml")
-# print(soup.prettify())
 vacuum_price = float(soup.find(name="span", class_="a-price-whole").text.split(".")[0])
 
 # Infos about email.
 SERVER = "smtp.gmail.com"
-FROM = "bba16114@uom.edu.gr"
-TO = "bba16114@uom.edu.gr"
+FROM = "FIRST_EMAIL"
+TO = "SECOND_EMAIL"
 SUBJECT = "Track the price of vacuum"
 
 msg = 'To:' + TO + '\n' + 'From: ' + FROM + '\n' + f"Subject:{SUBJECT}" + '\n'
@@ -37,13 +32,11 @@ msg = 'To:' + TO + '\n' + 'From: ' + FROM + '\n' + f"Subject:{SUBJECT}" + '\n'
 TEXT = msg + f"Hurry up!\n The price decreases. Now is {vacuum_price}!"
 
 # Procedure about sending.
-if vacuum_price > 200:
+if vacuum_price < 100:
     server = smtplib.SMTP(SERVER, 587)
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login(FROM, "lu7thoox")
+    server.login(FROM, "FIRST_EMAIL_PASSWORD")
     server.sendmail(FROM, TO, TEXT)
     server.quit()
-
-
