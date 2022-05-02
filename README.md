@@ -3,8 +3,6 @@
 
 The email which informs us about the product's price.
 
-## Scripting & Automation Deliverables
-Automation
 ## Data Extraction Tools
 Beautiful Soup
 ## Programming Languages
