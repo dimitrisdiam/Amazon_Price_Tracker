@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 
 # Features about Authorization.
-# TOKEN
+# TOKEN pt2
 
 headers = {
             "Accept-Language": "en,el;q=0.9",
