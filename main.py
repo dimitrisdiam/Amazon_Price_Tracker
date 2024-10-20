@@ -3,11 +3,15 @@ from bs4 import BeautifulSoup
 import smtplib
 
 # Features about Authorization.
+# TOKEN
+
 headers = {
             "Accept-Language": "en,el;q=0.9",
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
                           "Chrome/101.0.4951.41 Safari/537.36",
 }
+
+
 
 response = requests.get("https://www.amazon.com/ILIFE-Pro-ElectroWall-Self-Charging-Tangle-Free/dp/B085VR2WYR?ref_=ast_sto_dp&th=1&psc=1_",
                         headers=headers)
